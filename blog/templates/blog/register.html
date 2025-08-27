@@ -1,0 +1,20 @@
+{% extends "blog/base.html" %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<div class="container">
+    <div class="col-sm-4">
+        <h1> Register </h1>
+
+        {% comment %} ?ถ้าเราไม่ใส่ method POST, default มันจะมาเป็น GET  {% endcomment %}
+        <form action="/register" method="POST">
+            {% csrf_token %} 
+            {{ regis | crispy }} 
+            <input class="btn btn-primary" type="submit" value="Submit">
+        </form>
+        
+    </div>
+</div>
+
+{% endblock %}

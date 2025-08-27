@@ -1,0 +1,9 @@
+{% extends "blog/base.html" %}
+
+{% block content %}
+    <br>
+    <h1> {{ post.title }} </h1>
+    สร้างเมื่อวันที่ {{ post.date_update | date }} <br><br>
+    <img src="{{post.featured_pic.url}}" class="img-fluid" alt="{{post.title}}"> <br>
+    {{ post.body | safe }}
+{% endblock %}
