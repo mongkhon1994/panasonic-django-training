@@ -15,7 +15,7 @@ SECRET_KEY = 'django-insecure-chbx%ovn_d(%sut9+jgvue==vlxshowwzg9dbl8qoa4@5w+v*1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['snooker.pythonanywhere.com']
 
 
 # Application definition
